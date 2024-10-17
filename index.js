@@ -9,10 +9,11 @@ const { criarAutor } = require("./autor/criarAutor");
 const { listarAutores } = require("./autor/listarAutor");
 const { listarLivro } = require("./livros/listarLivro");
 
-criarAutor("Xexeu","Xexeu084@gmail.com");
+const autor1 = criarAutor("Xexeu","Xexeu084@gmail.com");
+const autor2 = criarAutor("Vanderlei", "Vanderlei917@gmail.com");
 
-criarLivro("Xexeu", "Harry potter");
-criarLivro("Lucas", "Senhor dos Aneis")
+criarLivro(autor1.nome , "Harry potter");
+criarLivro(autor2.nome , "Senhor dos Aneis");
 
 listarAutores();
 listarLivro();

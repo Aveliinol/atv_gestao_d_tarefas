@@ -3,6 +3,7 @@ const { autores } = require("./autores"); // Importa a variável autores do arqu
 function criarAutor(nome, email) {
     const novoAutor = { nome, email };
     autores.push(novoAutor);
+    return novoAutor; 
 };
 
 module.exports = { criarAutor };  // Exporta a função criarAutor para ser ultilizada em outros arquivos
